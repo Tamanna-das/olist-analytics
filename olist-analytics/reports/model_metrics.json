@@ -1,0 +1,145 @@
+{
+  "split": {
+    "val_start": "2018-04-15",
+    "test_start": "2018-06-21",
+    "n_train": 67379,
+    "n_val": 14606,
+    "n_test": 14485
+  },
+  "target_recall": 0.5,
+  "features": {
+    "numeric": [
+      "promised_days",
+      "purchase_hour",
+      "purchase_dow",
+      "is_weekend",
+      "n_items",
+      "n_products",
+      "n_sellers",
+      "total_price",
+      "total_freight",
+      "freight_ratio",
+      "max_item_price",
+      "total_weight_kg",
+      "max_weight_kg",
+      "total_volume_l",
+      "avg_photos",
+      "distance_km",
+      "same_state",
+      "customer_lat",
+      "customer_lng",
+      "payment_installments",
+      "n_payment_types",
+      "seller_prior_orders",
+      "seller_prior_delivered",
+      "seller_prior_late",
+      "seller_days_active",
+      "route_prior_delivered",
+      "route_prior_late",
+      "route_recent_delivered",
+      "route_recent_late",
+      "route_recent_mean_days",
+      "network_recent_late_rate",
+      "network_recent_mean_days",
+      "slack_days",
+      "slack_ratio",
+      "seller_prior_late_rate",
+      "route_prior_late_rate",
+      "route_recent_late_rate"
+    ],
+    "categorical": [
+      "customer_state",
+      "seller_state",
+      "main_category",
+      "payment_type"
+    ]
+  },
+  "results": {
+    "logistic_regression": {
+      "model": "Logistic regression",
+      "flag_rate_chosen_on_val": 0.1868,
+      "val": {
+        "n": 14606,
+        "base_rate": 0.0431,
+        "pr_auc": 0.133,
+        "roc_auc": 0.7546,
+        "threshold": 0.6671,
+        "precision": 0.1154,
+        "recall": 0.5,
+        "f1": 0.1876,
+        "flagged_pct": 0.1868,
+        "precision_at_top10pct": 0.1444,
+        "recall_at_top10pct": 0.3349
+      },
+      "test": {
+        "n": 14485,
+        "base_rate": 0.0428,
+        "pr_auc": 0.0665,
+        "roc_auc": 0.5743,
+        "threshold": 0.6149,
+        "precision": 0.0595,
+        "recall": 0.2597,
+        "f1": 0.0968,
+        "flagged_pct": 0.1869,
+        "precision_at_top10pct": 0.0787,
+        "recall_at_top10pct": 0.1839
+      },
+      "test_without_refit": {
+        "n": 14485,
+        "base_rate": 0.0428,
+        "pr_auc": 0.0753,
+        "roc_auc": 0.6356,
+        "threshold": 0.7949,
+        "precision": 0.0669,
+        "recall": 0.2919,
+        "f1": 0.1088,
+        "flagged_pct": 0.1869,
+        "precision_at_top10pct": 0.0732,
+        "recall_at_top10pct": 0.171
+      }
+    },
+    "gradient_boosting": {
+      "model": "HistGradientBoosting (iter=150, lr=0.05)",
+      "flag_rate_chosen_on_val": 0.1909,
+      "val": {
+        "n": 14606,
+        "base_rate": 0.0431,
+        "pr_auc": 0.1161,
+        "roc_auc": 0.7476,
+        "threshold": 0.1389,
+        "precision": 0.1129,
+        "recall": 0.5,
+        "f1": 0.1843,
+        "flagged_pct": 0.1909,
+        "precision_at_top10pct": 0.1383,
+        "recall_at_top10pct": 0.3206
+      },
+      "test": {
+        "n": 14485,
+        "base_rate": 0.0428,
+        "pr_auc": 0.0643,
+        "roc_auc": 0.6182,
+        "threshold": 0.0563,
+        "precision": 0.0691,
+        "recall": 0.3081,
+        "f1": 0.1128,
+        "flagged_pct": 0.191,
+        "precision_at_top10pct": 0.0704,
+        "recall_at_top10pct": 0.1645
+      },
+      "test_without_refit": {
+        "n": 14485,
+        "base_rate": 0.0428,
+        "pr_auc": 0.0569,
+        "roc_auc": 0.5994,
+        "threshold": 0.088,
+        "precision": 0.0546,
+        "recall": 0.2435,
+        "f1": 0.0892,
+        "flagged_pct": 0.191,
+        "precision_at_top10pct": 0.0552,
+        "recall_at_top10pct": 0.129
+      }
+    }
+  }
+}

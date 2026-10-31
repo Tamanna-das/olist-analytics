@@ -1,0 +1,3 @@
+outcome,n_orders,avg_approval_days,avg_seller_handover_days,avg_carrier_transit_days,pct_missed_shipping_limit
+late,6533,0.51,5.55,27.89,27.8
+on_time,89922,0.42,2.6,7.98,7.7

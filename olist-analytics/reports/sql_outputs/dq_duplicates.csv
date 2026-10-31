@@ -1,0 +1,5 @@
+check_name,n_duplicates
+orders.order_id,0
+order_reviews.review_id,814
+orders with >1 review,547
+geolocation rows per zip (excess),981148

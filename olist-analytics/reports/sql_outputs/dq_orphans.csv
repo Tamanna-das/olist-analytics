@@ -1,0 +1,10 @@
+check_name,n
+items -> missing product,0
+items -> missing seller,0
+items -> missing order,0
+orders -> missing customer,0
+orders with no items,775
+orders with no payment,1
+orders with no review,768
+customer zips missing from geolocation,157
+seller zips missing from geolocation,7

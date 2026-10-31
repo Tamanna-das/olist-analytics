@@ -1,0 +1,21 @@
+cohort_month,cohort_size,repeat_90d,repeat_90d_pct,window_status
+2017-01,752,29,3.86,complete
+2017-02,1690,31,1.83,complete
+2017-03,2571,66,2.57,complete
+2017-04,2325,50,2.15,complete
+2017-05,3541,102,2.88,complete
+2017-06,3102,89,2.87,complete
+2017-07,3822,101,2.64,complete
+2017-08,4130,114,2.76,complete
+2017-09,4075,121,2.97,complete
+2017-10,4392,102,2.32,complete
+2017-11,7190,168,2.34,complete
+2017-12,5439,97,1.78,complete
+2018-01,6951,153,2.2,complete
+2018-02,6357,190,2.99,complete
+2018-03,6931,137,1.98,complete
+2018-04,6698,114,1.7,complete
+2018-05,6586,108,1.64,complete
+2018-06,5920,71,1.2,incomplete window
+2018-07,6016,89,1.48,incomplete window
+2018-08,6209,35,0.56,incomplete window

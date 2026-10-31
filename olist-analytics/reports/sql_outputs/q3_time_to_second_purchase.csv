@@ -1,0 +1,6 @@
+gap_bucket,n_customers,pct
+0: same day,896,31.0
+1: 1-30 days,571,19.8
+2: 31-90 days,504,17.5
+3: 91-180 days,419,14.5
+4: >180 days,498,17.2
